@@ -4,6 +4,7 @@ let totalOutput = document.getElementById('totalBillOutput');
 let checkOutput = document.getElementById('paycheckAmountOutput');
 let gradeOutput = document.getElementById('percentGradeOutput');
 let gasOutput = document.getElementById('gasCostOutput');
+let diceOutput = document.getElementById('diceOutput');
 
 
 let tipBtn = document.getElementById("tipButton");
@@ -97,6 +98,25 @@ gasBtn.addEventListener('click', function () {
 
     // Show the output
     gasOutput.innerHTML = "$" + gasCost;
+
+
+})
+
+
+let diceBtn = document.getElementById("diceButton");
+diceBtn.addEventListener('click', function () {
+
+
+    // Gas Cost Calculator Variables
+    let numberRolled;
+
+    // Do the math
+    numberRolled = Math.random() * 6 + 1
+    numberRolled = Math.floor(numberRolled)
+
+
+    // Show the output
+    diceOutput.innerHTML = numberRolled;
 
 
 })
