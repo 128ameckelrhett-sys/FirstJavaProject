@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
     <title>Mini Projects - Intro to JS</title>
 </head>
 <body>
@@ -111,6 +112,25 @@
                 </div>
             </div>
 
+
+            <!-- Mini Project 1-->
+            <div class="col-12 col-md-6">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-header bg-purple text-white">
+                        <h2 class="h4 mb-0">Dice Roll</h2>
+                    </div>
+                    <div class="card-body text-center">
+                        <div class="mb-3">
+                            <label for="perGallonInput" class="form-label">Price per Gallon ($)</label>
+                            <input type="number" class="form-control" id="perGallonInput" min="0" step="0.01" placeholder="4.20">
+                        </div>
+                        <button type="button" class="btn btn-purple" id="gasButton">Calculate Gas Cost</button>
+                    </div>
+                    <div class="card-footer">
+                        <p class="mb-0">Cost to Fill Up: <strong id="gasCostOutput">--</strong></p>
+                    </div>
+                </div>
+            </div>
 
         </div>
     </div>
