@@ -5,6 +5,7 @@ let checkOutput = document.getElementById('paycheckAmountOutput');
 let gradeOutput = document.getElementById('percentGradeOutput');
 let gasOutput = document.getElementById('gasCostOutput');
 let diceOutput = document.getElementById('diceOutput');
+let usernameOutput = document.getElementById('usernameOutput');
 
 
 let tipBtn = document.getElementById("tipButton");
@@ -107,7 +108,7 @@ let diceBtn = document.getElementById("diceButton");
 diceBtn.addEventListener('click', function () {
 
 
-    // Gas Cost Calculator Variables
+    // Dice Variables
     let numberRolled;
 
     // Do the math
@@ -117,6 +118,30 @@ diceBtn.addEventListener('click', function () {
 
     // Show the output
     diceOutput.innerHTML = numberRolled;
+
+
+})
+
+
+let usernameBtn = document.getElementById("usernameButton");
+usernameBtn.addEventListener('click', function () {
+
+
+    // Username Variables
+    let firstName = document.getElementById('firstNameInput').value
+    let favoriteGame = document.getElementById('favoriteGameInput').value
+    let numbersGenerated;
+    let username;
+
+
+    // Do the math
+    numbersGenerated = Math.random() * 999 + 1
+    numbersGenerated = Math.floor(numbersGenerated)
+    username = firstName + favoriteGame + numbersGenerated
+
+
+    // Show the output
+    usernameOutput.innerHTML = username;
 
 
 })
